@@ -7,13 +7,13 @@ endif
 syn match fmrNonTerminal /<\a\w*>/
 syn match fmrAny /(any)/ contained
 syn match fmrFrame /\[\a\w*\]/
-syn region xString start=/"/ skip=/\\"/ end=/"/ contained
+syn region fmrString start=/"/ skip=/\\"/ end=/"/ contained
 syn region fmrFunction start=/{/ end=/}/ contained
-syn region xRules start=/=/ skip=/\\"/ end=/;/ contains=fmrNonTerminal,fmrAny,xString,fmrFunction
+syn region fmrRules start=/=/ skip=/\\"/ end=/;/ contains=fmrNonTerminal,fmrAny,fmrString,fmrFunction
 
 hi link fmrNonTerminal	Type
 hi link fmrAny	Keyword
 hi link fmrFrame	Identifier
-hi link xString 	String
+hi link fmrString 	String
 hi link fmrFunction 	PreProc
-hi link xRules   Special
+hi link fmrRules   Special
