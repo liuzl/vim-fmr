@@ -17,6 +17,10 @@ $ git clone https://github.com/liuzl/vim-fmr
 $ source ~/.vimrc
 ```
 
+### Vundle install
+
+Add ```Plugin 'liuzl/vim-fmr'``` to `.vimrc` and run `PluginInstall` in vim.
+
 ## Maintainer
 
 [Zhanliang Liu](https://zliu.org)
