@@ -14,6 +14,6 @@ syn region fmrRules start=/=/ skip=/\\"/ end=/;/ contains=fmrNonTerminal,fmrAny,
 hi link fmrNonTerminal	Type
 hi link fmrAny	Keyword
 hi link fmrFrame	Identifier
-hi link fmrString 	String
-hi link fmrFunction 	PreProc
-hi link fmrRules   Special
+hi link fmrString	String
+hi link fmrFunction	PreProc
+hi link fmrRules	Special
