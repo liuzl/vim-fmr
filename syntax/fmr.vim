@@ -5,7 +5,8 @@ elseif exists("b:current_syntax")
 endif
 
 syn match fmrNonTerminal /<\a\w*>/
-syn match fmrAny /(any)/ contained
+" syn match fmrAny /(any)/ contained
+syn region fmrAny start=/(/ end=/)/
 syn match fmrFrame /\[\a\w*\]/
 syn region fmrString start=/"/ skip=/\\"/ end=/"/ contained
 syn region fmrFunction start=/{/ end=/}/ contained
