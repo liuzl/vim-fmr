@@ -12,7 +12,8 @@ syn match fmrFrame /\[\a\w*\]/
 syn region fmrString start=/"/ skip=/\\"/ end=/"/ contained
 syn region fmrFunction start=/{/ end=/}/ contained
 syn region fmrRules start=/=/ skip=/\\"/ end=/;/ contains=fmrNonTerminal,fmrAny,fmrString,fmrFunction
-syn region fmrComment start=/\/\// end=/\n/
+syn region fmrLineComment start=/\/\// end=/\n/
+syn region fmrComment start=/\/\*/ end=/\*\//
 
 hi link fmrNonTerminal Type
 hi link fmrAny         Keyword
@@ -21,4 +22,5 @@ hi link fmrString      String
 hi link fmrFunction    PreProc
 hi link fmrRules       Special
 hi link fmrInclude     Include
+hi link fmrLineComment Comment
 hi link fmrComment     Comment
