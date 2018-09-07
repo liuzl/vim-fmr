@@ -12,7 +12,7 @@ syn match fmrFrame /\[\a\w*\]/
 syn region fmrString start=/"/ skip=/\\"/ end=/"/ contained
 syn region fmrFunction start=/{/ end=/}/ contained
 
-syn region fmrRules start=/=/ skip=/\\"/ end=/;/ contains=fmrNonTerminal,fmrAny,fmrString,fmrFunction
+syn region fmrRules start=/=/ skip=/\\"/ end=/;/ contains=fmrNonTerminal,fmrAny,fmrString,fmrFunction,fmrComment,fmrLineComment
 syn region fmrLineComment start=/\/\// end=/\n/
 syn region fmrComment start=/\/\*/ end=/\*\//
 
