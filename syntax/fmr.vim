@@ -6,7 +6,6 @@ endif
 
 syn match fmrInclude /#\s*include\s*"/ nextgroup=fmrString contains=fmrString
 syn match fmrNonTerminal /<\a\w*>/
-" syn match fmrAny /(any)/ contained
 syn region fmrAny start=/(/ end=/)/
 syn match fmrFrame /\[\a\w*\]/
 syn region fmrString start=/"/ skip=/\\"/ end=/"/ contained
@@ -20,11 +19,9 @@ hi link fmrNonTerminal Type
 hi link fmrAny         Keyword
 hi link fmrFrame       Identifier
 hi link fmrString      String
-" hi link fmrFunction    PreProc
-" hi fmrFunction ctermfg=Brown
-hi fmrFunction ctermfg=208
-
 hi link fmrRules       Special
 hi link fmrInclude     Include
 hi link fmrLineComment Comment
 hi link fmrComment     Comment
+
+hi fmrFunction ctermfg=208
