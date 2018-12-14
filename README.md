@@ -14,7 +14,6 @@ Clone this repo into your `.vim/bundle` directory. For example:
 ```sh
 $ cd ~/.vim/bundle
 $ git clone https://github.com/liuzl/vim-fmr
-$ source ~/.vimrc
 ```
 
 ### Vundle install
